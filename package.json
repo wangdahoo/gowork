@@ -1,0 +1,26 @@
+{
+  "name": "@wangdahoo/gowork",
+  "version": "0.1.0",
+  "description": "> Setup golang development envionment quickly.",
+  "main": "gowork",
+  "bin": "gowork",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangdahoo/gowork.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wangdahoo/gowork/issues"
+  },
+  "homepage": "https://github.com/wangdahoo/gowork#readme",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "commander": "^2.20.0",
+    "shelljs": "^0.8.3"
+  }
+}

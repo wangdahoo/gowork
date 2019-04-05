@@ -1,0 +1,35 @@
+#!/usr/bin/env node
+const program = require('commander')
+const chalk = require('chalk')
+const pkg = require('./package.json')
+const { createProject } = require('./lib')
+
+program
+  .version(pkg.version, '-v, --version')
+
+program
+  .command('create <project>')
+  .description('create a project')
+  .option('--cwd [cwd]', 'work directory')
+  .option('--golang [golang]', 'golang version')
+  .action(function (project, options) {
+    const {
+      cwd,
+      golang
+    } = options
+    // console.log(cwd, golang)
+
+    createProject(project, {
+      cwd: cwd || process.cwd(),
+      golang
+    })
+  })
+
+program.parse(process.argv)
+
+const args = process.argv.slice(2)
+if (args.length === 0 || [
+  'create'
+].indexOf(args[0]) === -1) {
+  program.outputHelp()
+}

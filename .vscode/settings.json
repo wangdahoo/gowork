@@ -1,6 +1,0 @@
-{
-    "go.gopath": "~/.gvm/pkgsets/go1.12/gowork",
-    "go.buildOnSave": "workspace",
-    "go.toolsGopath": "~/.gvm/pkgsets/go1.12/global",
-    "http.proxy": "http://localhost:8123"
-}
