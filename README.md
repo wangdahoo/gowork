@@ -10,6 +10,6 @@
 ## Usage
 
 ```bash
-npm i -g gowork
+npm i -g @wangdahoo/gowork
 gowork create myproject --cwd ./myproject --golang=go1.12
 ```
