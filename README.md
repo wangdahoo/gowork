@@ -1,3 +1,15 @@
 # Gowork
 
-> Setup golang development envionment quickly, based on [gvm](https://github.com/moovweb/gvm)
+> Setup `vscode` golang development envionment quickly.
+
+## Prepare
+
+- [gvm](https://github.com/moovweb/gvm)
+- [vscode-go](https://github.com/Microsoft/vscode-go)
+
+## Usage
+
+```bash
+npm i -g gowork
+gowork create myproject --cwd ./myproject --golang=go1.12
+```
