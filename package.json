@@ -1,6 +1,6 @@
 {
   "name": "@wangdahoo/gowork",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "> Setup golang development envionment quickly.",
   "main": "gowork",
   "bin": "gowork",
@@ -24,6 +24,6 @@
     "shelljs": "^0.8.3"
   },
   "engines": {
-    "node" : ">=8.10.0"
+    "node": ">=8.10.0"
   }
 }
