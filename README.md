@@ -11,5 +11,5 @@
 
 ```bash
 npm i -g @wangdahoo/gowork
-gowork create myproject --cwd ./myproject --golang=go1.12
+gowork create myproject --cwd ./ --golang go1.12
 ```
