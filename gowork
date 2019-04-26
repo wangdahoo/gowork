@@ -4,7 +4,7 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'production'
 const program = require('commander')
 const chalk = require('chalk')
 const pkg = require('./package.json')
-const { createProject } = require('./lib')
+const { createProject, ensureProject } = require('./lib')
 
 program
   .version(pkg.version, '-v, --version')
@@ -27,11 +27,31 @@ program
     })
   })
 
+program
+  .command('ensure')
+  .description('ensure project, take current dirctory as workspace')
+  .option('--golang [golang]', 'golang version')
+  .action(function (options) {
+    const {
+      golang
+    } = options
+
+    cwd = process.cwd()
+    const split = cwd.split('/')
+    const projectName = split[split.length - 1]
+    
+    ensureProject(projectName, {
+      cwd,
+      golang
+    })
+  })
+
 program.parse(process.argv)
 
 const args = process.argv.slice(2)
 if (args.length === 0 || [
-  'create'
+  'create',
+  'ensure'
 ].indexOf(args[0]) === -1) {
   program.outputHelp()
 }
