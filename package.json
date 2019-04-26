@@ -1,7 +1,7 @@
 {
   "name": "@wangdahoo/gowork",
-  "version": "1.0.6",
-  "description": "> Setup golang development envionment quickly.",
+  "version": "1.0.7",
+  "description": "> Setup vscode golang development envionment quickly.",
   "main": "gowork",
   "bin": "gowork",
   "scripts": {
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/wangdahoo/gowork.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "王大虎 <157195705@qq.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/wangdahoo/gowork/issues"
