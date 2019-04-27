@@ -1,6 +1,6 @@
 {
   "name": "@wangdahoo/gowork",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "> Setup vscode golang development envionment quickly.",
   "main": "gowork",
   "bin": "gowork",
