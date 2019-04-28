@@ -14,16 +14,19 @@ program
   .description('create a project')
   .option('--cwd [cwd]', 'work directory')
   .option('--golang [golang]', 'golang version')
+  .option('--govendor [govendor]', 'create govendor script in workspace', false)
   .action(function (project, options) {
     const {
       cwd,
-      golang
+      golang,
+      govendor
     } = options
-    // console.log(cwd, golang)
+    // console.log(cwd, golang, govendor)
 
     createProject(project, {
       cwd: cwd || process.cwd(),
-      golang
+      golang,
+      govendor
     })
   })
 
