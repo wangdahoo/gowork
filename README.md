@@ -6,7 +6,6 @@
 
 - [gvm](https://github.com/moovweb/gvm)
 - [vscode-go](https://github.com/Microsoft/vscode-go)
-- [govendor(optional)](https://github.com/kardianos/govendor)
 
 ## Usage
 
