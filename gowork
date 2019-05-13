@@ -13,36 +13,26 @@ program
   .command('create <project>')
   .description('create a project')
   .option('--cwd [cwd]', 'work directory')
-  .option('--golang [golang]', 'golang version')
   .action(function (project, options) {
     const {
-      cwd,
-      golang
+      cwd
     } = options
-    // console.log(cwd, golang)
 
     createProject(project, {
-      cwd: cwd || process.cwd(),
-      golang
+      cwd: cwd || process.cwd()
     })
   })
 
 program
   .command('ensure')
   .description('ensure project, take current dirctory as workspace')
-  .option('--golang [golang]', 'golang version')
-  .action(function (options) {
-    const {
-      golang
-    } = options
-
+  .action(function () {
     cwd = process.cwd()
     const split = cwd.split('/')
     const projectName = split[split.length - 1]
     
     ensureProject(projectName, {
-      cwd,
-      golang
+      cwd
     })
   })
 
