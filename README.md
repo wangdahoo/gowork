@@ -1,10 +1,9 @@
-# Gowork
+# Gowork ![golang version](https://img.shields.io/badge/go-1.12%2B-9cf.svg)
 
-> Setup `vscode` golang development envionment quickly.
+> Setup seperated golang development envionment quickly.
 
 ## Prepare
-
-- [vscode-go](https://github.com/Microsoft/vscode-go)
+- [vscode-go](https://github.com/Microsoft/vscode-go) if use `vscode`
 
 ## Usage
 
