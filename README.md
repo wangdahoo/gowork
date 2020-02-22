@@ -9,11 +9,13 @@
 
 ```bash
 npm i -g @wangdahoo/gowork
-# create workspace
-gowork create myproject --cwd ./
+# create new project
+gowork create myproject
+cd myproject
+./ge go mod tidy
 
 # using this command after you git clone a project created by gowork, 
-# to ensure your pkgset and link your project to GOPATH.
+# to ensure your workspace right and link your project to GOPATH.
 cd <path/to/project>
 gowork ensure
 ```
